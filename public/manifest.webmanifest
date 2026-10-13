@@ -1,0 +1,40 @@
+{
+  "name": "S.A.R.A - Sistema de Apoyo y Rendimiento Académico",
+  "short_name": "S.A.R.A",
+  "description": "S.A.R.A: Tu tutora de estudio adaptativa con memoria continua, evaluación diagnóstica y accesibilidad avanzada.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "lang": "es",
+  "dir": "ltr",
+  "background_color": "#020617",
+  "theme_color": "#0f172a",
+  "categories": ["education", "productivity"],
+  "icons": [
+    {
+      "src": "/pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-maskable-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/sara-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

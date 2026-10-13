@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGradMask" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e40af" />
+      <stop offset="50%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#4f46e5" />
+    </linearGradient>
+  </defs>
+
+  <!-- Full-bleed background for Android maskable adaptive cropping -->
+  <rect width="512" height="512" fill="url(#bgGradMask)" />
+
+  <!-- Inside safe-zone: scaled and padded by 15% -->
+  <g transform="translate(64, 40) scale(0.75)">
+    <!-- Academic Cap -->
+    <polygon points="256,120 400,192 256,264 112,192" fill="#ffffff" />
+    <path d="M172,228 L172,296 C172,342 340,342 340,296 L340,228 L256,270 Z" fill="#e0e7ff" />
+    <path d="M374,205 L392,260 L398,310 L386,310 L388,260 Z" fill="#fbbf24" />
+    <circle cx="392" cy="316" r="8" fill="#f59e0b" />
+    <circle cx="256" cy="192" r="8" fill="#2563eb" />
+    <g transform="translate(256, 360)" text-anchor="middle">
+      <text y="0" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="58" fill="#ffffff" letter-spacing="4">S.A.R.A</text>
+      <text y="34" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="20" fill="#bfdbfe" letter-spacing="1">RENDIMIENTO ACADÉMICO</text>
+    </g>
+  </g>
+</svg>

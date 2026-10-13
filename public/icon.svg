@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e40af" />
+      <stop offset="50%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#4f46e5" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60a5fa" />
+      <stop offset="100%" stop-color="#a5b4fc" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Background rounded squircle -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+
+  <!-- Subtle glow inner ring -->
+  <rect x="16" y="16" width="480" height="480" rx="96" fill="none" stroke="#ffffff" stroke-width="4" stroke-opacity="0.15" />
+
+  <!-- Academic Cap / S.A.R.A Core Crest -->
+  <g filter="url(#shadow)" transform="translate(0, -10)">
+    <!-- Graduation Cap Top Diamond -->
+    <polygon points="256,120 400,192 256,264 112,192" fill="#ffffff" />
+    
+    <!-- Cap under-base -->
+    <path d="M172,228 L172,296 C172,342 340,342 340,296 L340,228 L256,270 Z" fill="#e0e7ff" />
+    
+    <!-- Academic Tassel Ribbon -->
+    <path d="M374,205 L392,260 L398,310 L386,310 L388,260 Z" fill="#fbbf24" />
+    <circle cx="392" cy="316" r="8" fill="#f59e0b" />
+    <circle cx="256" cy="192" r="8" fill="#2563eb" />
+  </g>
+
+  <!-- Brain / Knowledge nodes glowing beneath -->
+  <g transform="translate(256, 350)" text-anchor="middle">
+    <!-- Acronym Name -->
+    <text y="0" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="52" fill="#ffffff" letter-spacing="4">S.A.R.A</text>
+    <text y="32" font-family="system-ui, -apple-system, sans-serif" font-weight="600" font-size="16" fill="#bfdbfe" letter-spacing="1">APOYO Y RENDIMIENTO ACADÉMICO</text>
+  </g>
+</svg>

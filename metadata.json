@@ -1,0 +1,6 @@
+{
+  "name": "S.A.R.A - Sistema de Apoyo y Rendimiento Académico",
+  "description": "S.A.R.A (Sistema de Apoyo y Rendimiento Académico): Tutor IA de estudio con memoria de temas anteriores, pedagogía adaptada por materia y grado escolar, y accesibilidad avanzada.",
+  "requestFramePermissions": ["microphone", "camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

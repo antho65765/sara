@@ -1,0 +1,62 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "UserProfile",
+      "description": "Perfil del estudiante autenticado con Google en S.A.R.A",
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string",
+          "description": "ID único de Firebase Auth del usuario"
+        },
+        "email": {
+          "type": "string",
+          "description": "Correo electrónico de Google del usuario"
+        },
+        "displayName": {
+          "type": "string",
+          "description": "Nombre completo mostrado del usuario"
+        },
+        "photoURL": {
+          "type": "string",
+          "description": "URL del avatar de Google"
+        },
+        "grade": {
+          "type": "string",
+          "description": "Grado escolar actual del estudiante"
+        },
+        "currentSubject": {
+          "type": "string",
+          "description": "Materia principal seleccionada"
+        },
+        "xp": {
+          "type": "number",
+          "description": "Puntos de experiencia acumulados"
+        },
+        "level": {
+          "type": "number",
+          "description": "Nivel académico del estudiante"
+        },
+        "streak": {
+          "type": "number",
+          "description": "Días consecutivos de racha de estudio"
+        },
+        "createdAt": {
+          "type": "string",
+          "description": "Fecha de registro ISO"
+        },
+        "updatedAt": {
+          "type": "string",
+          "description": "Fecha de última actualización ISO"
+        }
+      },
+      "required": ["userId", "email"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "UserProfile",
+      "description": "Colección de perfiles de usuario. Cada usuario solo puede leer y modificar su propio documento."
+    }
+  }
+}
